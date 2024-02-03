@@ -124,7 +124,7 @@ strong/bold and *<C-i>* for for emphasis/italic.
 DELETE                                                *markdown.inline.delete*
 
 Inline styles around the cursor can be deleted in normal mode using
-*ds{style}*, where *{style}* is the key corresponding to the style to
+*ds{style}*, where |{style}| is the key corresponding to the style to
 delete (by default "i", "b", "s", or "c"). Only the style directly surrounding
 the cursor will be deleted.
 
@@ -140,8 +140,8 @@ CHANGE                                                *markdown.inline.change*
 
 Inline styles around the cursor can be changed in normal mode using
 *cs{from}{to}*, where *{from}* and *{to}* are the keys corresponding to the
-current style (*{from}*) and the new style (*{to}*) (by default "i", "b", "s",
-or "c"). Only the matching *{from}* style directly surrounding the cursor will
+current style (|{from}|) and the new style (*{to}*) (by default "i", "b", "s",
+or "c"). Only the matching |{from}| style directly surrounding the cursor will
 be changed.
 
         Before                  Command             After ~
@@ -566,7 +566,7 @@ markdown.setup({opts})                                      *markdown.setup()*
             })
 <
         `on_attach` can be used to support standard/typical inline style
-        keybindings in visual mode like *<C-b>* for strong/bold and *<C-i>*
+        keybindings in visual mode like |<C-b>| for strong/bold and |<C-i>|
         for for emphasis/italic:
 >lua
             on_attach = function(bufnr)
